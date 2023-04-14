@@ -5,7 +5,6 @@
 h1 {
     font-family: 'Baloo 2', cursive;
     font-size: 50px;
-
 }
 
 h2 {
@@ -29,32 +28,73 @@ h4 {
     color: rgb(237, 100, 53);
 }
 
+.add-btn {
+    /* Ссылка */
+    text-decoration: none;
+}
+
 .wrapper {
-      
     background-color: rgb(178, 231, 233);
     border-radius: 25px;
     display: inline-block;
-    cursor:pointer;
-    color:#ffffff;
-    font-family:Arial;
-	font-size:17px;
-    padding: 12px 38px;
-    transition: background-color 0.5s ease;
-    
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 17px;
+    padding: 14px 30px;
+    border: solid rgb(178, 231, 233) 1px;
+    transition: background-color 0.5s ease, border 0.5s ease;
+
+
 }
-.wrapper:hover{
+
+.wrapper:hover .add-btn__text {
+    /* Измененние цвета текста*/
+    color: rgb(237, 100, 53);
+}
+
+.wrapper:hover {
+    /* Изенение цвета фона при наведении*/
+    border: solid rgb(255, 230, 212) 1px;
     background-color: rgb(255, 230, 212);
+
 }
-.add-btn{
-    text-decoration: none;
+
+.wrapper:active {
+    /* Изменеие цвета фона при нажатии*/
+    background-color: rgb(69, 193, 199);
 }
-.add-btn__text{
+
+/*
+.wrapper::after{
+    position: absolute;
+    background-color: black;
+    opacity: 0;
+    animation: blink 1s ease-in-out;
+    z-index: -1;
+}*/
+
+.wrapper:not(:hover) {
+    animation: blink is;
+}
+@keyframes blink {
+    0% {
+      background-color: red;
+    }
+    50% {
+      background-color: blue;
+    }
+     100% {
+      background-color: red;
+    }
+  }
+.add-btn__text {
+    /* Текст на кнопке */
     font-family: 'PT Sans', sans-serif;
     font-size: 16.5px;
     font-weight: 700;
     color: rgb(69, 193, 199);
-    
- }
- .add-btn__text:hover{
-    color: rgb(237, 100, 53);
- }
+    transition: color 0.5s ease;
+    user-select: none;
+
+}
