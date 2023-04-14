@@ -29,18 +29,32 @@ h4 {
     color: rgb(237, 100, 53);
 }
 
-.button__add {
+.wrapper {
+      
+    background-color: rgb(178, 231, 233);
+    border-radius: 25px;
+    display: inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Arial;
+	font-size:17px;
+    padding: 12px 38px;
+    transition: background-color 0.5s ease;
+    
+}
+.wrapper:hover{
+    background-color: rgb(255, 230, 212);
+}
+.add-btn{
+    text-decoration: none;
+}
+.add-btn__text{
     font-family: 'PT Sans', sans-serif;
     font-size: 16.5px;
     font-weight: 700;
-    color: rgb(69, 193, 169);
-
-    height: 48.5px;
-    width: 145;
-
-    border-radius: 15%;
-
-}
-.button__add:hover{
-    height: 250px;
-}
+    color: rgb(69, 193, 199);
+    
+ }
+ .add-btn__text:hover{
+    color: rgb(237, 100, 53);
+ }
