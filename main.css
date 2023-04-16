@@ -5,6 +5,7 @@
 h1 {
     font-family: 'Baloo 2', cursive;
     font-size: 50px;
+    line-height: 50px;
     text-align: center;
 }
 
@@ -14,6 +15,7 @@ h2 {
     font-weight: 400;
     color: rgb(149, 139, 126);
     text-align: center;
+    margin-bottom: 60px;
 }
 
 h3 {
@@ -21,7 +23,7 @@ h3 {
     font-size: 18px;
     font-weight: 400;
     color: rgb(149, 139, 126);
-    margin: 24px 0px 0px ;
+    margin: 24px 0px 0px;
 }
 
 h4 {
@@ -47,10 +49,7 @@ h4 {
     font-size: 17px;
     padding: 14px 30px;
     border: solid rgb(178, 231, 233) 1px;
-    margin: 24px 0px 0px ;
-    /*transition: background-color 0.3s ease, border 0s ease;*/
-
-
+    margin: 24px 0px 0px;
 }
 
 .wrapper:hover .add-btn__text {
@@ -102,15 +101,19 @@ h4 {
     display: inline-block;
     padding: 20px 15px;
 }
-.trending__carousel{
+
+.trending__carousel {
     display: flex;
-  justify-content: center;
+    justify-content: center;
 }
 
-@media (min-width: 767px) {
-    .preview-img {
-        width: 242px;
-        height: auto;
-       
+@media (min-width: 768px) {
+
+  
+
+    #h1 {
+        width: 400px;
+        font-size: 30px;
+        line-height: 30px;
     }
 }
