@@ -1,73 +1,64 @@
-<link rel="stylesheet" href="main.css" />
+<!doctype html>
+<html lang="en">
 
-<div class="trending">
-    <div class="trending__caption">
-        <h1>Trending Products</h1>
-        <!-- SVG -->
-        <img width="20" src="./img/bone_between_dots.svg" alt="a decorative bone" />
-        <h2>Top-selling items and popular picks by our customers. Check them now!</h2>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+
+  <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+  <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+
+  <link rel="stylesheet" href="main.css" />
+
+</head>
+
+<body>
+
+  <div class="owl-carousel owl-theme">
+    <div class="item">
+      <img class="preview-img" src="img/dora-metal-pet-brush.png" alt="pet_brush">
+    </div>
+    <div class="item">
+      <img class="preview-img" src="img/kitten-heaven-set.png" alt="kitten_set">
+    </div>
+    <div class="item">
+      <img class="preview-img" src="img/opty-pet-carrier.png" alt="pet_carrier">
+    </div>
+    <div class="item">
+      <img class="preview-img" src="img/aga-rope-toy.png" alt="rope_toy">
+    </div>
+    <div class="item">
+      <img class="preview-img" src="img/dora-pet-carrier.png" alt="dora_pet_carrier">
     </div>
 
-    <section class="trending__carousel">
-        <div class="trending__carousel-bloc">
-
-            <img class="preview-img" src="img/dora-metal-pet-brush.png" alt="pet_brush">
-            <h3>DORA Metal Pet Brush</h3>
-            <h4 class="price">$15,00</h4>
-
-            <div class="test">
-                <div class="wrapper">
-                    <a href="#" class="add-btn">
-                        <span>
-                            <span class="add-btn__text">Add to Cart</span>
-                        </span>
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <div class="trending__carousel-bloc">
-            <img class="preview-img" src="img/kitten-heaven-set.png" alt="kitten_set">
-            <h3>Kitten's Heaven Set</h3>
-            <h4 class="price">$12,00</h4>
-            <div class="wrapper">
-                <a href="#" class="add-btn">
-                    <span class="add-btn__text">Add to Cart</span>
-                </a>
-            </div>
-        </div>
-        <div class="trending__carousel-bloc">
-            <img class="preview-img" src="img/opty-pet-carrier.png" alt="pet_carrier">
-            <h3>OPTY Pet Carrier</h3>
-            <h4 class="price">$8,00</h4>
-            <div class="wrapper">
-                <a href="#" class="add-btn">
-                    <span class="add-btn__text">Add to Cart</span>
-                </a>
-            </div>
-        </div>
-        <div class="trending__carousel-bloc">
-            <img class="preview-img" src="img/aga-rope-toy.png" alt="rope_toy">
-            <h3>AGA Rope Toy</h3>
-            <h4 class="price">$5,00</h4>
-            <div class="wrapper">
-                <a href="#" class="add-btn">
-                    <span class="add-btn__text">Add to Cart</span>
-                </a>
-            </div>
-        </div>
-        <div class="trending__carousel-bloc">
-            <img class="preview-img" src="img/dora-pet-carrier.png" alt="dora_pet_carrier">
-            <h3>DORA Pet Carrier</h3>
-            <h4 class="price">$23,00</h4>
-            <div class="wrapper">
-                <a href="#" class="add-btn">
-                    <span class="add-btn__text">Add to Cart</span>
-                </a>
-            </div>
-        </div>
-
-    </section>
+  </div>
 
 
-</div>
+
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+    integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+  <script src="owlcarousel/owl.carousel.min.js"></script>
+  <script>
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      margin: 30,
+      nav: true,      //buttons
+      //center:true,
+
+      responsive: {
+        300: {
+          items: 1
+        },
+        767: {
+          items: 2
+        },
+        991: {
+          items: 4
+        }
+      }
+    })
+  </script>
+</body>
+
+</html>
