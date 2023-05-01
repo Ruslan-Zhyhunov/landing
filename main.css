@@ -1,9 +1,6 @@
 body * {
     box-sizing: border-box;
 }
-.owl-prev{
-    font-size: 50px;
-}
 
 @media (max-width: 320px) {
     .preview-img {
@@ -12,3 +9,25 @@ body * {
     }
 
 }
+.owl-prev {
+    position: absolute;
+    top: 85%;
+    left: 0;
+    transform: translateY(-50%);
+      }
+  
+  .owl-next {
+    position: absolute;
+    top: 85%;
+    right: 0;
+    transform: translateY(-50%);
+  }
+  .owl-nav{
+    font-size: 55px;
+    
+ }
+ 
+  .container{
+    padding: 15px;
+    margin: 15px;
+  }

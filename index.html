@@ -15,25 +15,26 @@
 
 <body>
 
-  <div class="owl-carousel owl-theme">
-    <div class="item">
-      <img class="preview-img" src="img/dora-metal-pet-brush.png" alt="pet_brush">
-    </div>
-    <div class="item">
-      <img class="preview-img" src="img/kitten-heaven-set.png" alt="kitten_set">
-    </div>
-    <div class="item">
-      <img class="preview-img" src="img/opty-pet-carrier.png" alt="pet_carrier">
-    </div>
-    <div class="item">
-      <img class="preview-img" src="img/aga-rope-toy.png" alt="rope_toy">
-    </div>
-    <div class="item">
-      <img class="preview-img" src="img/dora-pet-carrier.png" alt="dora_pet_carrier">
-    </div>
+  <div class="container">
 
+    <div class="owl-carousel owl-theme">
+      <div class="item">
+        <img class="preview-img" src="img/dora-metal-pet-brush.png" alt="pet_brush">
+      </div>
+      <div class="item">
+        <img class="preview-img" src="img/kitten-heaven-set.png" alt="kitten_set">
+      </div>
+      <div class="item">
+        <img class="preview-img" src="img/opty-pet-carrier.png" alt="pet_carrier">
+      </div>
+      <div class="item">
+        <img class="preview-img" src="img/aga-rope-toy.png" alt="rope_toy">
+      </div>
+      <div class="item">
+        <img class="preview-img" src="img/dora-pet-carrier.png" alt="dora_pet_carrier">
+      </div>
+    </div>
   </div>
-
 
 
   <script src="https://code.jquery.com/jquery-3.6.4.min.js"
@@ -43,8 +44,11 @@
     $('.owl-carousel').owlCarousel({
       loop: true,
       margin: 30,
-      nav: true,      //buttons
-      //center:true,
+      nav: true,      //--Кнопки для перелистівания
+      dots: false,
+      //navContainer: ".myNav",
+    
+      //responsiveBaseElement: '.container',// пересчет при изменении размера ?
 
       responsive: {
         300: {
@@ -57,7 +61,8 @@
           items: 4
         }
       }
-    })
+    });
+
   </script>
 </body>
 
