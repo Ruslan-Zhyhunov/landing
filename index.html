@@ -4,69 +4,38 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Bootstrap demo</title>
+  <title>СЛАЙДЕР</title>
+
 
   <link rel="stylesheet" href="main.css" />
-
 </head>
 
 <body>
-
-  <div class="container">
-    <div class="owl-carousel owl-theme">
-      <div class="item">
-        <img class="preview-img" src="img/dora-metal-pet-brush.png" alt="pet_brush">
+  <div class="wrapper">
+    <div class="slider-container">  <!-- "ОКНО" -->
+      <div class="slider-track">    <!-- "ПОЛОСКА" -->
+        <div class="slider-item"></div>
+        <div class="slider-item"></div>
+        <div class="slider-item"></div>
+        <div class="slider-item"></div>
+        <div class="slider-item"></div>
+        <div class="slider-item"></div>
+        <div class="slider-item"></div>
+        <div class="slider-item"></div>
+        <div class="slider-item"></div>
       </div>
-      <div class="item">
-        <img class="preview-img" src="img/kitten-heaven-set.png" alt="kitten_set">
-      </div>
-      <div class="item">
-        <img class="preview-img" src="img/opty-pet-carrier.png" alt="pet_carrier">
-      </div>
-      <div class="item">
-        <img class="preview-img" src="img/aga-rope-toy.png" alt="rope_toy">
-      </div>
-      <div class="item">
-        <img class="preview-img" src="img/dora-pet-carrier.png" alt="dora_pet_carrier">
-      </div>
+    </div>
+    <div class="slider-buttons">
+      <button class="btn-prev">Prev</button>
+      <button class="btn-next">Next</button>
     </div>
   </div>
 
 
+
   <script src="https://code.jquery.com/jquery-3.6.4.min.js"
     integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
-    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-  <script>
-    $('.owl-carousel').owlCarousel({
-      loop: true,
-      margin: 30,
-      nav: true,
-      dots: false,
-      //navText:["---","---"],
-
-
-      slideTransition: 'ease-out',
-      smartSpeed: 400,
-
-      //responsiveBaseElement: '.container',// пересчет при изменении размера ?
-
-      responsive: {
-        300: {
-          items: 1
-        },
-        767: {
-          items: 2
-        },
-        991: {
-          items: 4
-        }
-      }
-    });
-
-  </script>
+  <script src="main.js"></script>
 </body>
 
 </html>

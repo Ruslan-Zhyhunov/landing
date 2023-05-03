@@ -1,49 +1,42 @@
-@import url('https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css'); /*Проблема в этом файле*/
-@import url('https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css');
-
-body * {
-    box-sizing: border-box;
+*,
+::before,
+::after {
+  box-sizing: border-box;
 }
 
-@media (max-width: 320px) {
-    .preview-img {
-        height: 242px;
-        width: 242px;
-    }
-
+.wrapper {
+  width: 600px;
+  margin: 0 auto;
 }
-  .owl-prev {
-    position: absolute;
-    top: 85%;
-    left: 0;
-    transform: translateY(-50%);
-    margin-left: -30px;
-      }
-  
-  .owl-next {
-    position: absolute;
-    top: 85%;
-    right: 0;
-    transform: translateY(-50%);
-  }
-  .owl-nav{
-    font-size: 55px;
-    
- }
- 
-  .container{
-    padding: 15px;
-    margin: 15px;
-  }
-  .owl-theme .owl-nav [class*="owl-"]{
-    margin: -30px;
-    background-color: transparent;
 
-  }
+.slider-container {
+  overflow: hidden;
+  background-color: pink;
+}
 
-  .owl-theme .owl-nav:hover [class*="owl-"]{
-    
-    background-color: transparent;
-    color: black;
+.slider-track {
+  display: flex;
+  background-color: yellow;
+  transition: 1s;
+}
 
-  }
+.slider-item {
+  height: 100px;
+  /*min-width: 200px;*/
+}
+
+.slider-item:nth-child(3n+1) {
+  background-color: red;
+}
+
+.slider-item:nth-child(3n+2) {
+  background-color: green;
+}
+
+.slider-item:nth-child(3n+3) {
+  background-color: blue;
+}
+
+.slider-buttons {
+  text-align: center;
+}
