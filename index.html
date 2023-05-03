@@ -6,14 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Bootstrap demo</title>
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-  <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
-  <!--
-  <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
-  <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
-  -->
-
   <link rel="stylesheet" href="main.css" />
 
 </head>
@@ -21,7 +13,6 @@
 <body>
 
   <div class="container">
-
     <div class="owl-carousel owl-theme">
       <div class="item">
         <img class="preview-img" src="img/dora-metal-pet-brush.png" alt="pet_brush">
@@ -47,21 +38,19 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
     integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <!--
-    <script src="owlcarousel/owl.carousel.min.js"></script>
-  -->
+
   <script>
     $('.owl-carousel').owlCarousel({
       loop: true,
       margin: 30,
-      nav: true,     
+      nav: true,
       dots: false,
       //navText:["---","---"],
-      
-      
-      slideTransition:'linear',
-      smartSpeed:400,
-      
+
+
+      slideTransition: 'ease-out',
+      smartSpeed: 400,
+
       //responsiveBaseElement: '.container',// пересчет при изменении размера ?
 
       responsive: {
